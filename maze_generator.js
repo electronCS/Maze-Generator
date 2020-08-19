@@ -31,8 +31,6 @@ function setup()
 
     frameRate(30);
     generate();
-    //console.log(maze[1][1].walls);
-    //maze[1][1].display();
 
     s = new Solver(a, maze);
     input = createInput("" + rows);
