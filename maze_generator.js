@@ -17,8 +17,15 @@ function setup()
     solve = false;
     width = width - 200;
     if (input != null){
-        rows = int(input.value());
-        cols = int(input.value());
+        if (int(input.value()) > 50){
+            alert("Max size is 50");
+            rows = 50;
+            cols = 50;
+        }
+        else{
+            rows = int(input.value());
+            cols = int(input.value());
+        }
     }
     a = new Agent();
 
@@ -35,6 +42,7 @@ function setup()
     button.position(input.x + input.width, 40);
 
     button.mousePressed(setup);
+
 
 }
 function draw()
