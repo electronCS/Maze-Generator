@@ -8,7 +8,7 @@ var s;
 var solve = false;
 var cooldown = 0;
 var input;
-
+ 
 
 function setup()
 {
